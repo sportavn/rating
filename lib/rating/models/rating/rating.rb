@@ -5,6 +5,8 @@ module Rating
     self.table_name_prefix = 'rating_'
     self.table_name        = ::Rating::Config.rating_table
 
+    acts_as_paranoid
+
     belongs_to :resource,  polymorphic: true
     belongs_to :scopeable, polymorphic: true
 

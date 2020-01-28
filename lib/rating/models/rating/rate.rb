@@ -5,6 +5,8 @@ module Rating
     self.table_name_prefix = 'rating_'
     self.table_name        = ::Rating::Config.rate_table
 
+    acts_as_paranoid
+
     after_save :update_rating
 
     belongs_to :author,    polymorphic: true
