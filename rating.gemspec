@@ -20,10 +20,11 @@ Gem::Specification.new do |spec|
   spec.version     = Rating::VERSION
 
   spec.add_dependency 'activerecord'
+  spec.add_dependency 'paranoia'
 
   spec.add_development_dependency 'database_cleaner'
   spec.add_development_dependency 'factory_bot_rails'
-  spec.add_development_dependency 'mysql2'
+  spec.add_development_dependency 'pg'
   spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rspec-rails'
   spec.add_development_dependency 'rubocop-performance'
